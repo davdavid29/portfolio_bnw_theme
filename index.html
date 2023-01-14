@@ -251,16 +251,17 @@
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +639773782180</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Maverickdaveaguinaldo@gmail.com</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
 
-    <form action="https://formsubmit.co/maverickdaveaguinaldo@gmail.com" method="POST" target="_blank">
+    <p>Let's get in touch. Send me a message:</p>
+    <!--action="https://formsubmit.co/maverickdaveaguinaldo@gmail.com"-->
+    <form  method="POST">
       <p><input type="hidden" name="_captcha" value="false"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" id="email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" id="subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" id="message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-padding-large" onclick="sendMail()">
           <a href="" style="text-decoration: none;"> <i class="fa fa-paper-plane"></i> SEND MESSAGE</a>
         </button>
       </p>
@@ -277,8 +278,16 @@
  <p class="w3-small">Visit my social media accounts: Facebook, Instagram, Linkedin</p>
  <!-- End footer -->
 </footer>
-
 <!-- END PAGE CONTENT -->
 </div>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("EuQ53Y8JHgaRYdG5A");
+   })();
+</script>
+<script src="/js/script.js"></script>
 </body>
 </html>
