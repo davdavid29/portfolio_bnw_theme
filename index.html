@@ -4,10 +4,10 @@
     <title>Maverick's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/images/maverick_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font-awesome icons -->
+    <link rel="shortcut icon" href="/images/maverick_logo.png" type="image/x-icon">                                        <!--browser logo-->
+    <link rel="stylesheet" href="/css/style.css">                                                                          <!--css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">                                      <!-- google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      <!-- fontawesome icons -->
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -253,16 +253,23 @@
     </div><br>
 
     <p>Let's get in touch. Send me a message:</p>
-    <!--action="https://formsubmit.co/maverickdaveaguinaldo@gmail.com"-->
-    <form  method="POST">
-      <p><input type="hidden" name="_captcha" value="false"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" id="email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" id="subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" id="message"></p>
+    <form action="https://formsubmit.co/maverickdaveaguinaldo@gmail.com" method="POST">
+      <!--<p><input type="hidden" name="_captcha" value="false"></p>-->
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://maverickdaveportfolio.vercel.app/">
+      <!--<input type="hidden" name="_cc" value="">-->
+      <input type="hidden" name="_subject" value="Portfolio New Message">
+      <input type="hidden" name="_autoresponse" value="Thank you for reaching out to me through my portfolio contact form. I appreciate your interest in my work.
+      I will respond to your message as soon as possible, usually within 24 hours. If you have any urgent matter, please let me know and I'll get back to you as soon as I can.
+      Thank you again.
+      Regards, Maverick Dave Aguinaldo."/>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" name="name" required></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" name="email" required></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" name="subject" required></p>
+      <p><input class="w3-input w3-padding-16" type="text"s placeholder="Message" name="message" required></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" onclick="sendMail()">
-          <a href="" style="text-decoration: none;"> <i class="fa fa-paper-plane"></i> SEND MESSAGE</a>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
@@ -280,14 +287,5 @@
 </footer>
 <!-- END PAGE CONTENT -->
 </div>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("EuQ53Y8JHgaRYdG5A");
-   })();
-</script>
-<script src="/js/script.js"></script>
 </body>
 </html>
