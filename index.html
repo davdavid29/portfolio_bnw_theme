@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/images/maverick_logo.png" type="image/x-icon">                                        <!--browser logo-->
     <link rel="stylesheet" href="/css/style.css">                                                                          <!--css-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">                                      <!-- google font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      <!-- cdn fontawesome icons -->
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -16,7 +16,14 @@
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
     #main {margin-left: 120px}
     /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+      .footer-soc-med{
+        display: block;
+      }
+    }
     </style>
   </head>
 <body class="w3-black">
@@ -149,8 +156,8 @@
     <a class="w3-button w3-light-grey w3-padding-large w3-section" href="/pdf/resume.pdf" download="maverick's resume">
       <i class="fa fa-download"></i> Download Resume
     </a>
-  <!-- End About Section -->
   </div>
+  <!-- End About Section -->
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
@@ -170,10 +177,11 @@
         <img src="/images/1669911325885.jpeg" style="width:100%">
         <img src="/images/dfas.jpeg" style="width:100%">
       </div>
-    <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
+    <!-- End photo grid -->
+
   </div>
+  <!-- End Portfolio Section -->
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -207,13 +215,13 @@
         </button>
       </p>
     </form>
-  <!-- End Contact Section -->
   </div>
+  <!-- End Contact Section -->
   
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
 <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
   <p class="w3-small">Social Media accounts:</p>
-  <div style="display: flex;">
+  <div class="footer-soc-med">
     <a href="https://www.facebook.com/profile.php?id=100010020636529" style="text-decoration:none;padding-right:10px;"><i class="fa fa-facebook-official w3-hover-opacity"></i> <span style="font-size:12px!important;font-weight:1000;">Facebook</span></a>
     <br>
     <a href="https://www.instagram.com/davdavid29/" style="text-decoration:none;padding-right:10px;"><i class="fa fa-instagram w3-hover-opacity"></i> <span style="font-size:12px!important;font-weight:1000;">Instagram</span></a>
@@ -221,8 +229,9 @@
     <a href="https://www.linkedin.com/in/maverick-dave-aguinaldo/" style="text-decoration:none;padding-right: 10px;"><i class="fa fa-linkedin w3-hover-opacity"></i> <span style="font-size:12px!important;font-weight:1000;">Linkedin</span></a>
   </div>
  <p class="w3-small">Updated Portfolio as of: <br><span style="font-weight: 100;">January 2023</span></p>
- <!-- End footer -->
 </footer>
+<!-- End footer -->
+
 <!-- END PAGE CONTENT -->
 </div>
 <script defer src="/_vercel/insights/script.js"></script>
