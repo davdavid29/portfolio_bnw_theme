@@ -336,9 +336,7 @@ img{vertical-align:middle}a{color:inherit}
 }
 .w3-xxlarge{font-size:36px!important}.w3-xxxlarge{font-size:48px!important}
 .w3-jumbo{
-    /*font-size:64px!important;*/
-    font-size: 45px!important;
-    font-family:Impact;
+    font-size:64px!important;
 }
 .w3-left-align{text-align:left!important}.w3-right-align{text-align:right!important}.w3-justify{text-align:justify!important}
 .w3-center{
